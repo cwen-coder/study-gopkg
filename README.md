@@ -3,5 +3,6 @@
 + io-基本IO接口代码实例   
    /ioutil-方便的io操作函数集   
 + fmt-格式化io  
-+ bufio-缓存io
++ bufio-缓存io  
++ bytes-byte slice 便利操作
 
