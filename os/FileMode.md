@@ -28,4 +28,24 @@ const (
 
     ModePerm FileMode = 0777 // Unix permission bits
 )
+```     
+The defined file mode bits are the most significant bits of the FileMode.   
+The nine least-significant bits are the standard Unix rwxrwxrwx permissions.   
+The values of these bits should be considered part of the public API and may be used in wire protocols or disk representations: they must not be changed, although new bits might be added.     
+
+```go
+//IsDir reports whether m describles a regular file.  
+//That is ,it tests that no mode type bits are set.
+func (m FileMode) IsDir() bool
+
+//IsRegular reports whether m describle a regular file.
+//That is, it tests that no mode type bits are set.
+func (m FileMode) IsRegular() bool 
+
+//Perm returns the Unix permission bits in m.
+func (m FileMode) Perm() FileMode
+
+//返回文件模式的字符串
+func (m FileMode) String() string
+
 ```
