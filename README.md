@@ -8,5 +8,8 @@
 + strconv-字符串和基本数据类型之间转换    
 + string-字符串操作
 + os-平台无关的操作系统功能实现  
-+ path- 操作路径
-
+    /exec   
+    /signal  
+    /user   
++ path- 操作路径  
+    /filepath
