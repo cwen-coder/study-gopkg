@@ -11,5 +11,6 @@
     /exec   
     /signal  
     /user   
-+ path- 操作路径  
-    /filepath
++ path-操作路径  
+    /filepath  
++ flag-析命令行参数的功能接口
